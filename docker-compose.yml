@@ -1,6 +1,13 @@
-javaclient:
-  build: .
-  links:
-    - redis:redisdb
-redis:
-  image: redis
+version: '2'
+
+services:
+
+  javaclient:
+
+    build: .
+
+  redis:
+
+    image: redis
+
+    container_name: redisdb
